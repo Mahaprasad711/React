@@ -53,6 +53,11 @@ export default function TextForm() {
         classtext(newtext2);
 
   }
+
+  let clear=()=>
+    {
+      classtext("");
+    }
   
   let change=(event)=>
     {
@@ -72,6 +77,7 @@ export default function TextForm() {
   <button className='btn btn-primary' style={{ marginRight: '10px'}} onClick={convertUpperCase}>Convert to Uppercase <br/></button>
   <button className='btn btn-primary' style={{ marginRight: '10px'}} onClick={convertLowerCase}>Convert to Lowercase</button>
   <button className='btn btn-primary' onClick={sentence1}>Convert to Normal sentence Format</button>
+  <button type="button" class="btn btn-warning mx-2" onClick={clear}>Clear</button>
   </div>
     </div>
 
